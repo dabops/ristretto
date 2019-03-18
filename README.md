@@ -1,8 +1,10 @@
+[![CircleCI](https://circleci.com/gh/dabops/mocaccino.svg?style=svg)](https://circleci.com/gh/dabops/mocaccino)
+
 # Ristretto
 
 > Your best admin of gamers that allow you to take coffes
 
-## How to
+## How to Play with it
 
 ### As application
 
