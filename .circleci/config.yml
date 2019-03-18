@@ -1,0 +1,27 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  ristretto:
+    docker:
+      # User of the circleci official node version 9.2
+      - image: circleci/node:9.2
+
+    steps:
+      # Checkout code
+      - checkout
+
+      - run: ls
+
+      # install all dependencies
+      - run:
+          name: npm-install
+          command: npm install
+
+workflows:
+  version: 2
+  tagged-build:
+    jobs:
+      - ristretto
