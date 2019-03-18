@@ -13,12 +13,15 @@ jobs:
       # Checkout code
       - checkout
 
-      - run: ls
-
       # install all dependencies
       - run:
           name: npm-install
           command: npm install
+
+      # run tests suit
+      - run:
+          name: test
+          command: npm test
 
 workflows:
   version: 2
